@@ -2,3 +2,34 @@
     box-sizing: border-box;
 }
 
+body.dark-mode .targetElement {
+    background: #000000;
+}
+
+body {
+    background-color: #476F93;
+}
+
+#main-doc {
+    background-color: #F8FAFA;
+}
+
+.main-section.parent-section {
+    background: rgb(248,250,250);
+    background: linear-gradient(0deg, rgba(248,250,250,0.6082808123249299) 3%, rgba(150,188,228,1) 100%);
+    /* background: rgb(248,250,250);
+    background: linear-gradient(0deg, rgba(248,250,250,0.6082808123249299) 3%, rgba(240,197,56,0.7455357142857143) 100%); */
+}
+
+.main-section.child-section {
+    background: rgb(248,250,250);
+    background: linear-gradient(0deg, rgba(248,250,250,0.6082808123249299) 3%, rgba(177,110,147,1) 100%);
+}
+
+.code-snippet {
+    background-color: #000000;
+}
+
+code {
+    color: white;
+}
