@@ -15,11 +15,46 @@ p, li {
     font-family: 'Roboto Slab', serif;
 }
 
+/* Styling text with element selectors */
+
+header {
+    color: white;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+summary {
+    font-size: 2.5em;
+    /* margin-bottom: 3em; */
+}
+
+details {
+    margin-bottom: 5em;
+}
+
+header p {
+    font-size: 1.4em;
+}
+
 code {
     font-family: 'Source Code Pro', monospace;
     color: white;
     font-size: 1.2em;
 }
+
+figure {
+    background-color: #000000;
+    border-radius: 4px;
+    padding: 2em;
+}
+
+mark {
+    background-color: rgba(231, 211, 30, 0.466)
+}
+
+/* Styling main text box */
 
 .page-wrap {
     max-width: 80%;
@@ -27,15 +62,31 @@ code {
     padding: 0 auto;
 }
 
+header::after {
+    background-color: gold;
+    display: block;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    content:"";
+    z-index:-1;
+}
+
 #main-doc {
     background-color: #F8FAFA;
     border-radius: 7px;
-    display: flex;
+    padding: 2.5em;
+}
+
+.row {
+    display:flex;
 }
 
 .column {
     flex: 50%;
-    padding: 10px;
+    padding: 1.5em;
 }
 
 .main-section {
@@ -53,7 +104,42 @@ code {
     background: linear-gradient(0deg, rgba(248,250,250,0.6082808123249299) 3%, rgba(177,110,147,1) 100%);
 }
 
-.code-snippet {
-    background-color: #476F93;
-    border-radius: 4px;
+/* Text styling */
+
+/* next time, for styling code, use a library or something like this: https://highlightjs.org/ OR this: https://prismjs.com/ ...doing this manually is tedious */
+
+.section-title {
+    font-size: 2em;
+}
+
+.code-selector {
+    color: rgb(219, 185, 120);
+}
+
+.code-property {
+    color: rgb(141, 222, 255);
+}
+
+.code-keyword {
+    color: rgb(215, 142, 118);
+}
+
+.code-value {
+    color: rgb(219, 220,167);
+}
+
+.code-comment {
+    color: rgb(93, 154, 79)
+}
+
+.section-heading {
+    font-size: 1.7em;
+}
+
+.description-text {
+    font-size: 1.2em;
+}
+
+.description-list {
+    font-size: 1.1em;
 }
