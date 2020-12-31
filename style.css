@@ -98,10 +98,18 @@ header::after {
     padding: 2.5em;
 }
 
+.main-wrap {
+    display: grid;
+    grid-template-columns: .2fr 1fr;
+    gap: 2em;
+}
+
 #navbar {
     background: #111;
     border-radius: 8px;
     padding: 1rem;
+    align-self: start;
+    position: sticky;
 }
 
 #navbar ul {
