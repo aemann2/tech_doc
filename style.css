@@ -149,13 +149,22 @@ header::after {
 }
 
 .column {
-    flex: 50%;
+    display:flex;
+    flex-wrap: wrap;
+    flex: 100%;
     padding: 1.5em;
+}
+
+.column-section {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main-section {
     padding: 1em 1.5em;
     margin-bottom: 2em;
+    flex: 1 1 33%;
+    margin: 2em;
 }
 
 .main-section.parent-section {

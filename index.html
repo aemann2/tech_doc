@@ -63,157 +63,155 @@
                             </p>
                         </section>
                     </details>
-                <div class="row">
-                    <div class="column">
                         <h2 class="section-title">Properties for the Parent (flex container)</h2>
-                            <section class="main-section parent-section" id="display">
-                                <h3 class="section-heading">display</h3>
-                                <p class="description-text">This defines a flex container; inline or block depending on the g class="description-list"iven value. It enables a flex context for all its direct children.
+                            <div class="column-section">
+                                <section class="main-section parent-section" id="display">
+                                    <h3 class="section-heading">display</h3>
+                                    <p class="description-text">This defines a flex container; inline or block depending on the g class="description-list"iven value. It enables a flex context for all its direct children.
 
-                                <figure class="code-snippet">
-                                            <code>
-                                                <span class="code-selector">.container</span> {
-                                                <span class="code-property">display:</span> <span class="code-keyword">flex;</span> <span class="code-comment">/* or inline-flex */</span>
-                                            }
-                                            </code>
-                                </figure>
+                                    <figure class="code-snippet">
+                                                <code>
+                                                    <span class="code-selector">.container</span> {
+                                                    <span class="code-property">display:</span> <span class="code-keyword">flex;</span> <span class="code-comment">/* or inline-flex */</span>
+                                                }
+                                                </code>
+                                    </figure>
 
-                                Note that CSS columns have no effect on a flex container.
-                                </p>
-                            </section>
-                            <section class="main-section parent-section" id="flex-direction">
-                                <h3 class="section-heading">flex-direction</h3>
-                                <p class="description-text">This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
-                                
-                                <figure class="code-snippet">
-                                    <code>
-                                        <span class="code-selector">.container</span> {
-                                            <span class="code-property">flex-direction:</span> <span class="code-keyword">row | row-reverse | column | column-reverse</span>;
-                                        }
-                                    </code>
-                                </figure>
-
-                                <ul class="description-list">
-                                    <li><mark>row-reverse</mark>: right to left in ltr; left to right in rtl</li>
-                                    <li><mark>column</mark>: same as row but top to bottom</li>
-                                    <li><mark>row</mark> (default): left to right in ltr; right to left in rtl</li>
-                                    <li><mark>column-reverse</mark>: same as row-reverse but bottom to top</li>
-                                </ul>
-
-                                </p>
-                            </section>
-                            <section class="main-section parent-section" id="flex-wrap">
-                                <h3 class="section-heading">flex-wrap</h3>
-                                <p class="description-text">By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
-                                
-                                <figure class="code-snippet">
-                                    <code>
-                                        <span class="code-selector">.container</span> {
-                                            <span class="code-property">flex-wrap:</span> <span class="code-keyword">nowrap | wrap | wrap-reverse</span>;
-                                        }
-                                    </code>
-                                </figure>
-
-                                <ul class="description-list">
-                                    <li><mark>nowrap</mark> (default): all flex items will be on one line</li>
-                                    <li><mark>wrap</mark>: flex items will wrap onto multiple lines, from top to bottom.</li>
-                                    <li><mark>wrap-reverse</mark>: flex items will wrap onto multiple lines from bottom to top.</li>
-                                </ul>
-
-                                </p>
-                            </section>
-                            <section class="main-section parent-section" id="flex-flow">
-                                <h3 class="section-heading">flex-flow</h3>
-                                <p class="description-text">This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. The default value is row nowrap.
-
-                                <figure class="code-snippet">
+                                    Note that CSS columns have no effect on a flex container.
+                                    </p>
+                                </section>
+                                <section class="main-section parent-section" id="flex-direction">
+                                    <h3 class="section-heading">flex-direction</h3>
+                                    <p class="description-text">This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
+                                    
+                                    <figure class="code-snippet">
                                         <code>
                                             <span class="code-selector">.container</span> {
-                                            <span class="code-property">flex-flow:</span> <span class="code-keyword">column wrap</span>;
+                                                <span class="code-property">flex-direction:</span> <span class="code-keyword">row | row-reverse | column | column-reverse</span>;
                                             }
                                         </code>
-                                </figure>
+                                    </figure>
 
-                                </p>
+                                    <ul class="description-list">
+                                        <li><mark>row-reverse</mark>: right to left in ltr; left to right in rtl</li>
+                                        <li><mark>column</mark>: same as row but top to bottom</li>
+                                        <li><mark>row</mark> (default): left to right in ltr; right to left in rtl</li>
+                                        <li><mark>column-reverse</mark>: same as row-reverse but bottom to top</li>
+                                    </ul>
+
+                                    </p>
+                                </section>
+                                <section class="main-section parent-section" id="flex-wrap">
+                                    <h3 class="section-heading">flex-wrap</h3>
+                                    <p class="description-text">By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
+                                    
+                                    <figure class="code-snippet">
+                                        <code>
+                                            <span class="code-selector">.container</span> {
+                                                <span class="code-property">flex-wrap:</span> <span class="code-keyword">nowrap | wrap | wrap-reverse</span>;
+                                            }
+                                        </code>
+                                    </figure>
+
+                                    <ul class="description-list">
+                                        <li><mark>nowrap</mark> (default): all flex items will be on one line</li>
+                                        <li><mark>wrap</mark>: flex items will wrap onto multiple lines, from top to bottom.</li>
+                                        <li><mark>wrap-reverse</mark>: flex items will wrap onto multiple lines from bottom to top.</li>
+                                    </ul>
+
+                                    </p>
+                                </section>
+                                <section class="main-section parent-section" id="flex-flow">
+                                    <h3 class="section-heading">flex-flow</h3>
+                                    <p class="description-text">This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. The default value is row nowrap.
+
+                                    <figure class="code-snippet">
+                                            <code>
+                                                <span class="code-selector">.container</span> {
+                                                <span class="code-property">flex-flow:</span> <span class="code-keyword">column wrap</span>;
+                                                }
+                                            </code>
+                                    </figure>
+
+                                    </p>
+                                </section>
+                                <section class="main-section parent-section" id="justify-content">
+                                    <h3 class="section-heading">justify-content</h3>
+                                    <p class="description-text">This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
+                                    
+                                    <figure class="code-snippet">
+                                        <code>
+                                            <span class="code-selector">.container</span> {
+                                            <span class="code-property">justify-content:</span> <span class="code-keyword">flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right</span>;
+                                            }
+                                        </code>
+                                    </figure>
+
+                                    <ul class="description-list">
+                                        <li><mark>flex-start</mark> (default): items are packed toward the start of the flex-direction.</li>
+                                        <li><mark>flex-end</mark>: items are packed toward the end of the flex-direction.</li>
+                                        <li><mark>start</mark>: items are packed toward the start of the writing-mode direction.</li>
+                                        <li><mark>end</mark>: items are packed toward the end of the writing-mode direction.</li>
+                                        <li><mark>left</mark>: items are packed toward left edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like start.</li>
+                                        <li><mark>right</mark>: items are packed toward right edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like end.</li>
+                                        <li><mark>center</mark>: items are centered along the line</li>
+                                        <li><mark>space-between</mark>: items are evenly distributed in the line; first item is on the start line, last item on the end line</li>
+                                        <li><mark>space-around</mark>: items are evenly distributed in the line with equal space around them. <aside>Note that visually the spaces aren’t equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.</aside></li>
+                                        <li><mark>space-evenly</mark>: items are distributed so that the spacing between any two items (and the space to the edges) is equal.</li>
+                                    </ul>
+                                    <aside>Note that that browser support for these values is nuanced. For example, space-between never got support from some versions of Edge, and start/end/left/right aren’t in Chrome yet. MDN has detailed charts. The safest values are flex-start, flex-end, and center.</aside>
+                                    </p>
+                                </section>
+                                <section class="main-section parent-section" id="align-items">
+                                    <h3 class="section-heading">align-items</h3>
+                                    <p class="description-text"> This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).
+                                    
+                                    <figure class="code-snippet">
+                                        <code>
+                                            <span class="code-selector">.container</span> {
+                                            <span class="code-property">align-items:</span> <span class="code-keyword">stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end</span>;
+                                            }
+                                        </code>
+                                    </figure>
+
+                                    <ul class="description-list">
+                                        <li><mark>stretch</mark> (default): stretch to fill the container (still respect min-width/max-width)</li>
+                                        <li><mark>flex-start / start / self-start</mark>: items are placed at the start of the cross axis. The difference between these is subtle, and is about respecting the flex-direction rules or the writing-mode rules.</li>
+                                        <li><mark>flex-end / end / self-end</mark>: items are placed at the end of the cross axis. The difference again is subtle and is about respecting flex-direction rules vs. writing-mode rules.</li>
+                                        <li><mark>center</mark>: items are centered in the cross-axis</li>
+                                        <li><mark>baseline</mark>: items are aligned such as their baselines align</li>
+                                    </ul>
+
+                                    </p>
+                                </section>
+                                <section class="main-section parent-section" id="align-content">
+                                    <h3 class="section-heading">align-content</h3>
+                                    <p class="description-text">This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
+
+                                    Note: This property only takes effect on multi-line flexible containers, where flex-flow is set to either wrap or wrap-reverse). A single-line flexible container (i.e. where flex-flow is set to its default value, no-wrap) will not reflect align-content.
+                                    
+                                    <figure class="code-snippet">
+                                        <code>
+                                            <span class="code-selector">.container</span> {
+                                                <span class="code-property">align-content:</span> <span class="code-keyword">flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline</span>;
+                                            }
+                                        </code>
+                                    </figure>
+
+                                    <ul class="description-list">
+                                        <li><mark>normal</mark> (default): items are packed in their default position as if no value was set.</li>
+                                        <li><mark>flex-start / start</mark>: items packed to the start of the container. The (more supported) flex-start honors the flex-direction while start honors the writing-mode direction.</li>
+                                        <li><mark>flex-end / end</mark>: items packed to the end of the container. The (more support) flex-end honors the flex-direction while end honors the writing-mode direction.</li>
+                                        <li><mark>center</mark>: items centered in the container</li>
+                                        <li><mark>space-between</mark>: items evenly distributed; the first line is at the start of the container while the last one is at the end</li>
+                                        <li><mark>space-around</mark>: items evenly distributed with equal space around each line</li>
+                                        <li><mark>space-evenly</mark>: items are evenly distributed with equal space around them</li>
+                                        <li><mark>stretch</mark>: lines stretch to take up the remaining space</li>
+                                    </ul>
+
+                                    </p>
                             </section>
-                            <section class="main-section parent-section" id="justify-content">
-                                <h3 class="section-heading">justify-content</h3>
-                                <p class="description-text">This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
-                                
-                                <figure class="code-snippet">
-                                    <code>
-                                        <span class="code-selector">.container</span> {
-                                        <span class="code-property">justify-content:</span> <span class="code-keyword">flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right</span>;
-                                        }
-                                    </code>
-                                </figure>
-
-                                <ul class="description-list">
-                                    <li><mark>flex-start</mark> (default): items are packed toward the start of the flex-direction.</li>
-                                    <li><mark>flex-end</mark>: items are packed toward the end of the flex-direction.</li>
-                                    <li><mark>start</mark>: items are packed toward the start of the writing-mode direction.</li>
-                                    <li><mark>end</mark>: items are packed toward the end of the writing-mode direction.</li>
-                                    <li><mark>left</mark>: items are packed toward left edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like start.</li>
-                                    <li><mark>right</mark>: items are packed toward right edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like end.</li>
-                                    <li><mark>center</mark>: items are centered along the line</li>
-                                    <li><mark>space-between</mark>: items are evenly distributed in the line; first item is on the start line, last item on the end line</li>
-                                    <li><mark>space-around</mark>: items are evenly distributed in the line with equal space around them. <aside>Note that visually the spaces aren’t equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.</aside></li>
-                                    <li><mark>space-evenly</mark>: items are distributed so that the spacing between any two items (and the space to the edges) is equal.</li>
-                                </ul>
-                                <aside>Note that that browser support for these values is nuanced. For example, space-between never got support from some versions of Edge, and start/end/left/right aren’t in Chrome yet. MDN has detailed charts. The safest values are flex-start, flex-end, and center.</aside>
-                                </p>
-                            </section>
-                            <section class="main-section parent-section" id="align-items">
-                                <h3 class="section-heading">align-items</h3>
-                                <p class="description-text"> This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).
-                                
-                                <figure class="code-snippet">
-                                    <code>
-                                        <span class="code-selector">.container</span> {
-                                        <span class="code-property">align-items:</span> <span class="code-keyword">stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end</span>;
-                                        }
-                                    </code>
-                                </figure>
-
-                                <ul class="description-list">
-                                    <li><mark>stretch</mark> (default): stretch to fill the container (still respect min-width/max-width)</li>
-                                    <li><mark>flex-start / start / self-start</mark>: items are placed at the start of the cross axis. The difference between these is subtle, and is about respecting the flex-direction rules or the writing-mode rules.</li>
-                                    <li><mark>flex-end / end / self-end</mark>: items are placed at the end of the cross axis. The difference again is subtle and is about respecting flex-direction rules vs. writing-mode rules.</li>
-                                    <li><mark>center</mark>: items are centered in the cross-axis</li>
-                                    <li><mark>baseline</mark>: items are aligned such as their baselines align</li>
-                                </ul>
-
-                                </p>
-                            </section>
-                            <section class="main-section parent-section" id="align-content">
-                                <h3 class="section-heading">align-content</h3>
-                                <p class="description-text">This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
-
-                                Note: This property only takes effect on multi-line flexible containers, where flex-flow is set to either wrap or wrap-reverse). A single-line flexible container (i.e. where flex-flow is set to its default value, no-wrap) will not reflect align-content.
-                                
-                                <figure class="code-snippet">
-                                    <code>
-                                        <span class="code-selector">.container</span> {
-                                            <span class="code-property">align-content:</span> <span class="code-keyword">flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline</span>;
-                                        }
-                                    </code>
-                                </figure>
-
-                                <ul class="description-list">
-                                    <li><mark>normal</mark> (default): items are packed in their default position as if no value was set.</li>
-                                    <li><mark>flex-start / start</mark>: items packed to the start of the container. The (more supported) flex-start honors the flex-direction while start honors the writing-mode direction.</li>
-                                    <li><mark>flex-end / end</mark>: items packed to the end of the container. The (more support) flex-end honors the flex-direction while end honors the writing-mode direction.</li>
-                                    <li><mark>center</mark>: items centered in the container</li>
-                                    <li><mark>space-between</mark>: items evenly distributed; the first line is at the start of the container while the last one is at the end</li>
-                                    <li><mark>space-around</mark>: items evenly distributed with equal space around each line</li>
-                                    <li><mark>space-evenly</mark>: items are evenly distributed with equal space around them</li>
-                                    <li><mark>stretch</mark>: lines stretch to take up the remaining space</li>
-                                </ul>
-
-                                </p>
-                        </section>
-                    </div>
-                    <div class="column">
+                        </div>
                     <h2 class="section-title">Properties for the Children (flex items)</h2>
                         <section class="main-section child-section" id="order">
                             <h3 class="section-heading">order</h3>
@@ -245,6 +243,7 @@
                             Negative numbers are invalid.
                             </p>
                         </section>
+
                         <section class="main-section child-section" id="flex-shrink">
                             <h3 class="section-heading">flex-shrink</h3>
                             <p class="description-text">This defines the ability for a flex item to shrink if necessary.
@@ -307,8 +306,6 @@
                             Note that float, clear and vertical-align have no effect on a flex item.
                             </p>
                         </section>
-                    </div>
-                </div>
             </main>
         </div>
     </div>
