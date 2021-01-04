@@ -44,8 +44,22 @@ summary {
   font-size: 2.5em;
 }
 
+@keyframes appear {
+  from {
+    filter: opacity(0%);
+  }
+
+  to {
+    filter: opacity(100%);
+  }
+}
+
 details {
   margin-bottom: 5em;
+}
+
+#terminology {
+  animation: appear 0.8s linear;
 }
 
 header p {
@@ -128,6 +142,23 @@ header::after {
     80% 0%,
     46% 0
   );
+}
+
+#cross {
+  background: rgb(255, 0, 0);
+  height: 100px;
+  top: 1em;
+  position: absolute;
+  width: 20px;
+}
+#cross:after {
+  background: rgb(255, 0, 0);
+  content: '';
+  height: 20px;
+  left: -40px;
+  position: absolute;
+  top: 40px;
+  width: 100px;
 }
 
 #main-doc {
