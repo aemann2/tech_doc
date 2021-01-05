@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body.dark-mode .targetElement {
@@ -58,7 +59,7 @@ details {
   margin-bottom: 5em;
 }
 
-#terminology {
+#terminology-text {
   animation: appear 0.8s linear;
 }
 
@@ -151,6 +152,7 @@ header::after {
   position: absolute;
   width: 20px;
 }
+
 #cross:after {
   background: rgb(255, 0, 0);
   content: '';
@@ -164,7 +166,18 @@ header::after {
 #main-doc {
   background-color: #f8fafa;
   border-radius: 7px;
+  height: 100vh;
   padding: 2.5em;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border: 1px solid rgb(168, 167, 167);
 }
 
 .main-wrap {
@@ -176,12 +189,14 @@ header::after {
 #navbar {
   background: #111;
   border-radius: 8px;
+  margin-left: -3em;
   padding: 1rem;
   align-self: start;
+  text-align: center;
+  height: 100vh;
 }
 
 #navbar ul {
-  font-size: 0.85rem;
   padding: 0;
   list-style: none;
 }
@@ -192,7 +207,7 @@ header::after {
   text-decoration: none;
   display: block;
   line-height: 1.9em;
-  font-size: 1.2em;
+  font-size: 2.3vmin;
 }
 
 #navbar a:hover {
@@ -200,8 +215,12 @@ header::after {
   transition: color 0.3s ease-in-out;
 }
 
-.nav-link:nth-child(8),
-:nth-child(15) {
+.nav-link:first-child {
+  margin-top: 1em;
+}
+
+.nav-link:first-child,
+:nth-child(9) {
   margin-bottom: 2em;
 }
 
