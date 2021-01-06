@@ -90,7 +90,7 @@
                         <p class="description-text">This defines a flex container; inline or block depending on the g
                             class="description-list"iven value. It enables a flex context for all its direct children.
 
-                        <figure class="code-snippet">
+                        <figure>
                             <code>
                                 <span class="code-selector">.container</span> {
                                 <span class="code-property">display:</span> <span class="code-keyword">flex;</span> <span class="code-comment">/* or inline-flex */</span>
@@ -108,7 +108,7 @@
                             single-direction layout concept. Think of flex items as primarily laying out either in
                             horizontal rows or vertical columns.
 
-                        <figure class="code-snippet">
+                        <figure>
                             <code>
                                 <span class="code-selector">.container</span> {
                                     <span class="code-property">flex-direction:</span> <span class="code-keyword">row | row-reverse | column | column-reverse</span>;
@@ -130,7 +130,7 @@
                         <p class="description-text">By default, flex items will all try to fit onto one line. You can
                             change that and allow the items to wrap as needed with this property.
 
-                        <figure class="code-snippet">
+                        <figure>
                             <code>
                                 <span class="code-selector">.container</span> {
                                     <span class="code-property">flex-wrap:</span> <span class="code-keyword">nowrap | wrap | wrap-reverse</span>;
@@ -153,7 +153,7 @@
                             which together define the flex container’s main and cross axes. The default value is row
                             nowrap.
 
-                        <figure class="code-snippet">
+                        <figure>
                             <code>
                                 <span class="code-selector">.container</span> {
                                 <span class="code-property">flex-flow:</span> <span class="code-keyword">column wrap</span>;
@@ -170,7 +170,7 @@
                             flexible but have reached their maximum size. It also exerts some control over the alignment
                             of items when they overflow the line.
 
-                        <figure class="code-snippet">
+                        <figure>
                             <code>
                                 <span class="code-selector">.container</span> {
                                 <span class="code-property">justify-content:</span> <span class="code-keyword">flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right</span>;
@@ -212,7 +212,7 @@
                             along the cross axis on the current line. Think of it as the justify-content version for the
                             cross-axis (perpendicular to the main-axis).
 
-                        <figure class="code-snippet">
+                        <figure class="">
                             <code>
                                 <span class="code-selector">.container</span> {
                                 <span class="code-property">align-items:</span> <span class="code-keyword">stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end</span>;
@@ -245,7 +245,7 @@
                             set to either wrap or wrap-reverse). A single-line flexible container (i.e. where flex-flow
                             is set to its default value, no-wrap) will not reflect align-content.
 
-                        <figure class="code-snippet">
+                        <figure class="">
                             <code>
                                 <span class="code-selector">.container</span> {
                                     <span class="code-property">align-content:</span> <span class="code-keyword">flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline</span>;
@@ -283,7 +283,7 @@
                             the
                             order property controls the order in which they appear in the flex container.
 
-                        <figure class="code-snippet">
+                        <figure>
                             <code>
                                 <span class="code-selector">.item</span> {
                                     <span class="code-property">order:</span> <span class="code-value">5</span>; <span class="code-comment">/* default is 0 */</span>
@@ -305,7 +305,7 @@
                             take
                             up twice as much space as the others (or it will try to, at least).
 
-                        <figure class="code-snippet">
+                        <figure>
                             <code>
                                         <span class="code-selector">.item</span> {
                                             <span class="code-property">flex-grow:</span> <span class="code-value">4</span>; <span class="code-comment">/* default 0 */</span>
@@ -321,7 +321,7 @@
                         <h3 class="section-heading">flex-shrink</h3>
                         <p class="description-text">This defines the ability for a flex item to shrink if necessary.
 
-                        <figure class="code-snippet">
+                        <figure>
                             <code>
                                 <span class="code-selector">.item</span> {
                                     <span class="code-property">flex-shrink:</span> <span class="code-value">3</span>; <span class="code-comment">/* default 1 */</span>
@@ -345,7 +345,7 @@
                             max-content,
                             min-content, and fit-content do.
 
-                        <figure class="code-snippet">
+                        <figure>
                             <code>
                                 <span class="code-selector">.item</span> {
                                     <span class="code-property">flex-basis:</span> <span class="code-keyword"> | auto</span>; <span class="code-comment">/* default auto */</span>
@@ -365,7 +365,7 @@
                             default
                             is 0 1 auto, but if you set it with a single number value, it’s like 1 0.
 
-                        <figure class="code-snippet">
+                        <figure>
                             <code>
                                     <span class="code-selector">.item</span> {
                                         <span class="code-property">flex:</span> <span class="code-keyword">none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]</span>;
@@ -386,7 +386,7 @@
 
                             Please see the align-items explanation to understand the available values.
 
-                        <figure class="code-snippet">
+                        <figure>
                             <code>
                                     <span class="code-selector">.item</span> {
                                         <span class="code-property">align-self:</span> <span class="code-keyword">auto | flex-start | flex-end | center | baseline | stretch</span>;

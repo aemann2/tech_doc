@@ -11,6 +11,50 @@ body.dark-mode .targetElement {
   display: -webkit-box !important;
 }
 
+/* keyframes and classes for normal-mode animation */
+
+@keyframes normal-transition-main {
+  from {
+    background-color: black;
+    color: white;
+  }
+
+  to {
+    background-color: white;
+    color: black;
+  }
+}
+
+@keyframes normal-transition-body {
+  from {
+    background-color: black;
+  }
+
+  to {
+    background-color: rgb(45, 45, 51);
+  }
+}
+
+.normal-main-transition {
+  animation: normal-transition-main 0.8s linear;
+  animation-fill-mode: forwards;
+}
+
+.normal-main-no-transition {
+  background-color: black !important;
+  color: white;
+}
+
+.normal-body-transition {
+  animation: normal-transition-body 0.8s linear;
+}
+
+.normal-body-no-transition {
+  background-color: black !important;
+}
+
+/* Styling text with element selectors */
+
 body {
   background-color: rgb(45, 45, 51);
   font-family: 'Varela Round', sans-serif;
@@ -21,8 +65,6 @@ p,
 li {
   font-family: 'Roboto Slab', serif;
 }
-
-/* Styling text with element selectors */
 
 header {
   color: white;
@@ -45,6 +87,10 @@ summary {
   font-size: 2.5em;
 }
 
+details {
+  margin-bottom: 5em;
+}
+
 @keyframes appear {
   from {
     filter: opacity(0%);
@@ -53,10 +99,6 @@ summary {
   to {
     filter: opacity(100%);
   }
-}
-
-details {
-  margin-bottom: 5em;
 }
 
 #terminology-text {
@@ -83,18 +125,7 @@ mark {
   background-color: rgba(231, 211, 30, 0.466);
 }
 
-/* Styling main text box */
-
-.page-wrap {
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 0 auto;
-}
-
-.header-image img {
-  width: 25em;
-  border-radius: 6px;
-}
+/* header gradient and header styling */
 
 header::after {
   display: block;
@@ -145,6 +176,17 @@ header::after {
   );
 }
 
+.page-wrap {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.header-image img {
+  width: 25em;
+  border-radius: 6px;
+}
+
 #cross {
   background: rgb(255, 0, 0);
   height: 100px;
@@ -162,6 +204,8 @@ header::after {
   top: 40px;
   width: 100px;
 }
+
+/* Styling main text box */
 
 #main-doc {
   background-color: #f8fafa;
