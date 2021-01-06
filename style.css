@@ -327,3 +327,172 @@ header::after {
   align-items: center;
   margin-right: 1em;
 }
+
+/* media queries */
+
+@media screen and (max-width: 1555px) {
+  header {
+    display: inline-block;
+  }
+
+  .header-text p {
+    max-width: 80%;
+  }
+
+  .header-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .dark-mode-button {
+    left: 3em;
+    top: 15em !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    margin-bottom: 5px;
+  }
+  .header-text,
+  p {
+    text-align: center;
+  }
+
+  .header-text p {
+    max-width: none;
+  }
+
+  .header-text h1 {
+    font-size: 3vmax;
+  }
+
+  .header-text h2 {
+    font-size: 2.5vmax;
+  }
+
+  .header-text p {
+    font-size: 2.5vmax;
+  }
+
+  summary {
+    font-size: 4vmax;
+  }
+
+  #terminology-text {
+    font-size: 1.7vmax;
+  }
+
+  .section-title {
+    font-size: 3vmax;
+  }
+
+  .section-heading {
+    font-size: 2.7vmax;
+  }
+
+  .description-text,
+  figure,
+  li {
+    font-size: 2vmax;
+  }
+
+  #cross {
+    display: none;
+  }
+
+  .dark-mode-button {
+    top: 3em !important;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  h2.nav-title {
+    font-size: 3.8vmin;
+  }
+
+  #navbar a {
+    font-size: 2.2vmin;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #main-doc {
+    padding: 0.5em;
+    width: 90vw;
+  }
+
+  .main-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dark-mode-button {
+    display: none !important;
+  }
+
+  header {
+    margin-left: 0;
+    margin-bottom: 2.5em;
+  }
+
+  .header-text h1 {
+    font-size: 5vmax;
+  }
+
+  .header-text h2 {
+    font-size: 4.2vmax;
+  }
+
+  .header-text p {
+    font-size: 3.5vmax;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  #navbar a {
+    font-size: 1.5em;
+  }
+
+  .nav-title {
+    font-size: 2em;
+  }
+
+  .nav-link:first-child {
+    margin-top: 0.5em;
+  }
+
+  .nav-link:first-child,
+  :nth-child(9) {
+    margin-bottom: 0.5em;
+  }
+
+  #navbar {
+    height: 12em;
+    width: 90vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .signature {
+    font-size: 2vmax;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #main-doc {
+    text-align: center;
+    padding: 1em 0.5em;
+  }
+
+  .main-section {
+    margin: 2em 0;
+    padding: 0 0.3em;
+  }
+}
