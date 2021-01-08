@@ -35,6 +35,7 @@
   z-index: 1000;
   -webkit-transition: 0.3s ease-in;
   -o-transition: 0.3s ease-in;
+  /* without a property, this is shorthand for transition: all */
   transition: 0.3s ease-in;
 }
 
@@ -45,6 +46,7 @@
 }
 
 .top-dark-mode-button:after {
+  /* "content: property inserts generated content after the selected class...in this case, it inserts the text "DARK" after the dark mode button */
   content: 'DARK';
   position: absolute;
   color: #fff;
@@ -59,12 +61,14 @@
 }
 
 body.dark-mode .top-dark-mode-button:after {
+  /* see above for description of content property */
   content: 'NORMAL';
   color: white;
   top: 12px;
   right: 10px;
 }
 
+/* the dark toggle is the slider track */
 .dark-toggle {
   margin: 0;
   width: 30px;
@@ -98,6 +102,7 @@ body.dark-mode .top-dark-mode-button:after {
   transform: rotate(90deg);
 }
 
+/* changes the background of the slider track to blue */
 body.dark-mode .dark-toggle {
   background: rgb(67, 183, 255);
   background: -o-linear-gradient(
@@ -192,6 +197,7 @@ body.dark-mode .dark-toggle span {
   background-color: black !important;
 }
 
+/* general page styling for dark mode*/
 body.dark-mode {
   background: #000;
 }
