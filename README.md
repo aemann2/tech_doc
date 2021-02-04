@@ -4,7 +4,7 @@ This was my attempt to emulate a documentation page on the [CSS Tricks](https://
 
 ## Background:
 
-I'd just learned about SVG images and the CSS `::before` and `::after` selectors, so I wanted to put those to use here. I still hadn't heard of Figma, however, so the SVG design I came up with isn't quite as good as the one on CSS Tricks website. I tried to use more semantic HTML than I'd used in the past, so the code is better in that way. Unfortunately, I still didn't know SASS so the CSS is more complicated than it needs to be, and I think the side-nav could have been implemented better. I'd built the Dark Mode in a tutorial somewhere along the way, so I decided to include it here.
+I'd just learned about SVG images and the CSS `::before` and `::after` selectors, so I wanted to put those to use here. I still hadn't heard of Figma, however, so the SVG design I came up with isn't quite as good as the one on CSS Tricks website. I tried to use more semantic HTML than I'd used in the past, so the code is better in that way. Unfortunately, I still didn't know SASS so the CSS is more complicated than it needs to be, and I think the side-nav could have been implemented better. I'd built the Dark Mode in a tutorial somewhere along the way, so I decided to include it in this project.
 
 ## Technology:
 
