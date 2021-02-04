@@ -1,4 +1,4 @@
-# [Technical Documentation](https://aemann2.github.io/tech_doc/)
+# [Technical Documentation page](https://aemann2.github.io/tech_doc/)
 
 This was my attempt to emulate a documentation page on the [CSS Tricks](https://css-tricks.com/) website -- specifically, their [guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). Something I don't like about their guide is the amount of blank space at the end of the shorter column, so I tried to improve that. I also added a **side-nav** and a **dark mode** (to see what all the fuss was about).
 
