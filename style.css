@@ -272,6 +272,11 @@ header::after {
   color: #f44336;
 }
 
+/* fixes the color of the scrollbar corner for the Terminology nav */
+nav::-webkit-scrollbar-corner {
+  color: black;
+}
+
 .row {
   display: flex;
 }
