@@ -524,7 +524,7 @@ nav::-webkit-scrollbar-corner {
   #navbar {
     height: 12em;
     width: 90vw;
-    margin: 0;
+    margin: 0 0 1rem 0;
     padding: 0;
   }
 
