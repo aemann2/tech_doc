@@ -1,5 +1,7 @@
 # [Technical Documentation page](https://aemann2.github.io/tech_doc/)
 
+<a href="https://aemann2.github.io/tech_doc/" target="_blank"><img src='https://user-images.githubusercontent.com/68879246/117074426-264e7c00-ace8-11eb-9c96-7325e1967cea.png' alt='Tech Doc'></a>
+
 This was my attempt to emulate a documentation page on the [CSS Tricks](https://css-tricks.com/) website -- specifically, their [guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). Something I don't like about their guide is the amount of blank space at the end of the shorter column, so I tried to improve that. I also added a **side-nav** and a **dark mode** (to see what all the fuss was about).
 
 ## Background:
